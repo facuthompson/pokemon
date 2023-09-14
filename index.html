@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaris.css">
+    <title> pokemarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/login/login.html">
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <img src="img/pokelogo2.png" alt="pokebola" class="logo">
+        <nav class="navbar">
+
+            <div class="menu-label">
+                <img src="img/icons/menu-burger-fachero.png" alt="" class="menu-icon" />
+            </div>
+
+            <ul class="navbar-list">
+                <li><a href="#hero">INICIO</a></li>
+                <li><a href="#clases">CLASES</a></li>
+                <li><a href="#pokemones">POKEMONES</a></li>
+            </ul>
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="img/pokemones/pokecarrito.png" alt="" class="cart-icon" />
+                <div class="cart-bubble">0</div>
+            </label>
+            <div class="cart">
+                <h3>Tus Pokemones</h3>
+                <div class="cart-container">
+                    <div class="empty-message">
+                        <p> Aun no Capturaste ningun Pokemon</p>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <p>Total</p>
+                    <span class="total">$0</span>
+                </div>
+                <div class="cart-btn">
+                    <button class="cart-btn-delete inactive-btn inactive-hover">Vaciar</button>
+                    <button class="cart-btn-buy inactive-btn inactive-hover">Comprar</button>
+                </div>
+            </div>
+            <div class="overlay"></div>
+
+        </nav>
+    </header>
+
+
+
+
+
+
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Pokemarket <br> <span>Compralos todos!</span></h1>
+                <p> Aqui podras comprar todos los pokemones que te falten para ser el mejor</p>
+            </div>
+            <div class="hero-img">
+                <img src="img/pikachulogo.png" alt="mostro" class="logo-pikachu">
+            </div>
+        </section>
+
+
+
+        <section id="clases">
+            <h2 class="">Clases Destacadas</h2>
+            <div class="categories">
+                <button class="category" data-category="Fuego">
+                    <img src="img/tipo fuego2.jpg" alt="clases" class="type-icon"></button>
+                <button class="category" data-category="Agua">
+                    <img src="img/tipoagua.jpg" alt="clases" class="type-icon"></button>
+                <button class="category" data-category="Planta">
+                    <img src="img/tipoplanta2.jpg" alt="clases" class="type-icon"></button>
+            </div>
+        </section>
+
+
+
+        <section id="pokemones">
+            <div class="pokemones-titulo">
+                <h2>Pokemones Destacados</h2><br><br>
+                <p>Elegi entre todas estas clases a tu compañero.</p>
+            </div>
+            <div class="pokemon-container"></div>
+
+            <button class="ver-mas_btn">+</button>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="footer-img-conteiner">
+                <img src="img/pokelogo2.png" alt="banner" class="footer-banner">
+            </div>
+            <div class="footer-icon-conteiner">
+                <img src="img/icons/instagram.png" alt="instagram" class="footer-icon">
+                <img src="img/icons/whatsapp.png" alt="whatsapp" class="footer-icon">
+                <img src="img/icons/youtube.png" alt="youtube" class="footer-icon">
+            </div>
+            <h3>© Pokemarket</h3>
+        </footer>
+    </main>
+
+
+
+</body>
+
+<script src="./data.js"></script>
+<script src="./index.js"></script>
+
+</html>

@@ -1,0 +1,366 @@
+@media (max-width: 1200px) {
+
+    #hero {
+        width: 100%;
+    }
+
+    #pokemones {
+        width: 100%;
+    }
+
+    .pokemones-titulo {
+        width: 90%;
+    }
+
+
+
+
+    #pokemones .products  img {
+            width: 160px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60%;
+            margin-bottom: 5%;
+            margin-right: 20%;
+        }
+
+
+@media (max-width: 992px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        border: 2px solid red
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+        }
+
+    .navbar-list a {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 50px;
+        width: 55px
+    }
+    
+    .open-menu {
+        display: flex;
+    }
+
+
+    .menu-icon,
+    .logo {
+        z-index: 3;
+    }
+
+    .menu-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+
+
+    #hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/wallpaperMain.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .cart-bubble {
+        background-color: yellow;
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 0px 2px 1px 2px;
+        position: absolute;
+        right: -9px;
+        top: 4px;
+        color: orangered  ;
+    }
+
+
+    .categories {
+        width: 95%;
+    }
+    
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-info h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 600px;
+        min-width: unset;
+    }
+
+    .hero-info p {
+        width: 80%;
+        font-size: 2.3rem;
+    }
+
+    .logo-pikachu {
+        display: none;
+    }
+
+    #clases {
+        width: 100%;
+    }
+
+    #clases .categories  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    #pokemones {
+        width: 100%;
+    }
+
+    .pokemones-titulo {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+
+    .pokemon-container {
+        width: 90%;
+    }
+    
+
+    #pokemones .products img {
+        width: 160px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60%;
+        margin-bottom: 5%;
+        margin-right: 20%;
+    }
+    
+    #pokemones .products button {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        background: rgb(78, 175, 94);
+        color: white;
+        cursor: pointer;
+    }
+    #pokemones .products-btn button:hover {
+        background: rgb(20, 234, 241);
+        color: white;
+    }
+    
+    #pokemones .products h3 {
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        width: 110%;
+    }
+    
+    #pokemones button {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        background: red;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #pokemones button:hover {
+        background: rgb(78, 175, 94);
+        color: white;
+    }
+
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .service-conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+    }
+}
+
+.logo__nails {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-info h1 {
+        font-size: 55px;
+    }
+    .hero-info span {
+        font-size: 30px;
+    }
+    .hero-info p {
+        font-size: 30px;
+    }
+
+    #pokemones {
+        width: 100%;
+    }
+
+    .pokemones-titulo {
+        width: 90%;
+    }
+
+    .pokemon-container {
+        display: grid;
+        grid-template-columns:3fr, 1fr;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .hero-info h1 {
+        width: 90%;
+        max-width: 600px;
+        min-width: unset;
+        font-size: 70px;
+    }
+
+    .hero-info p {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    #clases  h2 {
+        font-size: 60px;
+
+    }
+
+
+
+    #pokemones {
+        width: 100%;
+    }
+
+    .pokemones-titulo {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+
+    #pokemones p {
+        font-size:  24px;
+    }
+
+    #pokemones h2 {
+        font-size: 70px;
+    }
+    
+
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .formulario {
+        width: 90%;
+    }
+
+    .conteinter-cajas {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-img-conteiner {
+        width: 30%;
+    }
+
+    .footer-banner {
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+}
