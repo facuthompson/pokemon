@@ -34,18 +34,22 @@
 
         .navbar-list {
             position: absolute;
-            top: 65px;
-            left: 5%;
-            right: 5%;
-            width: 90%;
+            top: 66px;
+            right: 100%;
+            width: 100%;
+            padding: 20px;
             flex-direction: column;
-            border: 2px solid red border-top: 0px;
+            background-image: url(img/burger-back.png);
+            border-top: none;
             border-radius: 0px 0px 15px 15px;
-            align-items: flex-start;
-            padding: 45px 30px;
-            gap: 25px;
+            align-items: center;
+            padding: 45px 35px;
+            gap: 15px;
             z-index: 2;
             display: none;
+            cursor: pointer;
+            border: #ee9ca7 2px solid;
+            border-top: none;
         }
 
         .navbar-list a {
@@ -108,7 +112,7 @@
 
         .cart {
             position: absolute;
-            top: 66px;
+            top: 64px;
             right: -79px;
         }
 
@@ -255,6 +259,12 @@
         display: none;
     }
 
+    @media (max-width: 890px) {
+        .categories {
+            max-width: 500px;
+        }
+    }
+
 
     @media (max-width: 768px) {
 
@@ -283,7 +293,13 @@
 
     @media (max-width: 576px) {
         header {
-            padding:  30px 30px;
+            padding: 30px 30px;
+        }
+
+        .cart {
+            position: absolute;
+            top: 65px;
+            right: -35px;
         }
 
         .hero-info {
@@ -309,7 +325,6 @@
 
         #clases h2 {
             font-size: 45px;
-
         }
 
 

@@ -27,9 +27,9 @@
             </div>
 
             <ul class="navbar-list">
-                <li><a href="#hero">INICIO</a></li>
-                <li><a href="#clases">CLASES</a></li>
-                <li><a href="#pokemones">POKEMONES</a></li>
+                <li ><a href="#hero">INICIO</a></li>
+                <li ><a href="#clases">CLASES</a></li>
+                <li ><a href="#pokemones">POKEMONES</a></li>
             </ul>
 
             <label for="cart-toggle" class="cart-label">
@@ -39,9 +39,8 @@
             <div class="cart">
                 <h3>Tus Pokemones</h3>
                 <div class="cart-container">
-                    <div class="empty-message">
-                        <p> Aun no Capturaste ningun Pokemon</p>
-                    </div>
+                    <div class="mensaje-vacio"></div>
+
                 </div>
                 <div class="cart-total">
                     <p>Total</p>
@@ -52,12 +51,9 @@
                     <button class="cart-btn-buy inactive-btn inactive-hover">Comprar</button>
                 </div>
             </div>
-            <div class="overlay"></div>
 
         </nav>
     </header>
-
-
 
 
 
@@ -78,12 +74,14 @@
         <section id="clases">
             <h2 class="">Clases Destacadas</h2>
             <div class="categories">
-                <button class="category" data-category="Fuego">
-                    <img src="img/tipo fuego2.jpg" alt="clases" class="type-icon"></button>
+                <button class="category active">
+                    <img src="img/pokemones/todasLasClases.jpg" alt="" class="type-icon"></button>
                 <button class="category" data-category="Agua">
-                    <img src="img/tipoagua.jpg" alt="clases" class="type-icon"></button>
+                    <img src="img/tipoagua.jpg" alt="s" class="type-icon"></button>
                 <button class="category" data-category="Planta">
-                    <img src="img/tipoplanta2.jpg" alt="clases" class="type-icon"></button>
+                    <img src="img/tipoplanta2.jpg" alt="" class="type-icon"></button>
+                <button class="category" data-category="Fuego">
+                    <img src="img/tipo fuego2.jpg" alt="" class="type-icon"></button>
             </div>
         </section>
 
@@ -96,7 +94,6 @@
             </div>
             <div class="pokemon-container"></div>
             <button class="ver-mas_btn">+</button>
-
         </section>
 
 
@@ -120,6 +117,7 @@
 
 
         <footer>
+            <div class="active-modal"></div>
             <div class="footer-img-conteiner">
                 <img src="img/pokelogo2.png" alt="banner" class="footer-banner">
             </div>
@@ -132,8 +130,7 @@
         </footer>
     </main>
 
-
-
+<img src="" alt="">
 </body>
 
 <script src="./data.js"></script>

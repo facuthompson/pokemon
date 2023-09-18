@@ -117,21 +117,117 @@ header {
 .open-cart {
     transform: translateY(0%);
     transition: all 0.4s ease;
+    background-image: url(img/pokemones/backgroundcart.jpg);
+    background-size: cover;
+    border-left: #fefefe solid 5px;
 }
 
+.open-cart h3 {
+    margin: 5%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #fefefe;
+    border: red solid 2px;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
 
+.cart-total  {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    color: #fefefe;
+    font-size: 20px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
 
+.cart-btn {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+.cart-btn-delete,
+.cart-btn-buy {
 
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background: red;
+    color: white;
+    cursor: pointer;
+}
 
+.cart-btn-delete:hover {
+    background: gold;
+    color: white;
+}
+.cart-btn-buy:hover {
+    background: forestgreen;
+    color: white;
+}
 
+.cart-item {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    border: #fefefe solid 2px;
+    border-radius: 10px;
+}
 
+.cart-item img {
+    margin: 3%;
+    margin-left: 9%;
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
 
+.cart-item h2 {
+    display: flex;
+    color: white;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.5)
+}
 
+.item-info {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+    padding-top: 5px;
+}
 
+.active-modal {
+    padding: 15px 0px;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(49, 234, 49);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(200%);
+    transition: all 0.6s ease;
+    z-index: 3;
+}
 
-
-
+.show-modal {
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+}
 
 
 
@@ -217,22 +313,22 @@ main {
 
 
 #clases .category {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     gap: 30px;
-    border: #fefefe solid 5px;
+    border: #fefefe solid 2px;
     cursor: pointer;
 }
 
+#clases .category img {
+    border-radius: 15px;
 
-
-
-
+}
 
 
 #clases h2 {
