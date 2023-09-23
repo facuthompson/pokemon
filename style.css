@@ -42,7 +42,7 @@ header {
 }
 
 .navbar-list {
-    gap: 60px;
+    gap: 45px;
 }
 
 .navbar-list a {
@@ -57,26 +57,24 @@ header {
 .open-menu {
     transform: translateY(0%);
     transition: all 0.4s ease;
+    background-color: #eea849;
 }
 
 
+
 .cart-label {
-        display: flex;
-        order: 2;
-        cursor: pointer;
-        margin: 5%;
-    }
+    display: flex;
+    order: 2;
+    cursor: pointer;
+    margin: 5%;
+}
 
-    .cart-label .cart-icon img {
-        height: 50px;
-        width: 50px
-    }
-    .cart-icon {
-        width: 40px;
-        height: 40px;
-    }
+.cart-icon {
+    width: 40px;
+    height: 40px;
+}
 
-.cart { 
+.cart {
     position: absolute;
     top: 80px;
     right: -80px;
@@ -95,14 +93,14 @@ header {
 }
 
 .cart-bubble {
+    position: absolute;
     background-color: yellow;
     font-size: 12px;
     border-radius: 10px;
     padding: 0px 2px 1px 2px;
-    position: absolute;
     right: -24px;
     top: 16px;
-    color: orangered  ;
+    color: orangered;
 }
 
 .cart-container {
@@ -110,6 +108,7 @@ header {
     flex-direction: column;
     gap: 20px;
 }
+
 .cart::-webkit-scrollbar {
     display: none;
 }
@@ -133,7 +132,7 @@ header {
     font-weight: 800;
 }
 
-.cart-total  {
+.cart-total {
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
@@ -154,7 +153,6 @@ header {
 
 .cart-btn-delete,
 .cart-btn-buy {
-
     font-size: 15px;
     padding: 8px 15px;
     border-radius: 10px;
@@ -169,6 +167,7 @@ header {
     background: gold;
     color: white;
 }
+
 .cart-btn-buy:hover {
     background: forestgreen;
     color: white;
@@ -185,15 +184,19 @@ header {
 
 .cart-item img {
     margin: 3%;
-    margin-left: 9%;
+    ;
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .cart-item h2 {
+    font-size: 20px;
     display: flex;
+    align-items: center;
+    text-align: center;
     color: white;
+    margin: auto;
     text-shadow: 3px 2px rgba(0, 0, 0, 0.5)
 }
 
@@ -203,34 +206,81 @@ header {
     text-align: center;
     align-items: center;
     flex-direction: column;
+    margin: 3%;
     color: white;
     gap: 5px;
     padding-top: 5px;
 }
 
-.active-modal {
-    padding: 15px 0px;
-    position: fixed;
-    bottom: 0px;
-    color: white;
-    font-weight: 500;
-    background-color: rgb(49, 234, 49);
-    width: 100%;
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.quantity-handler {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white
+}
+
+.item-quantity {
+    color: white;
+}
+
+.up {
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+    width: 2px;
+}
+
+.down {
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+    width: 2px;
+}
+
+.mensaje-vacio {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    color: #fefefe;
+    font-size: 20px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.modal {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(49, 234, 49);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-out;
     transform: translateY(200%);
-    transition: all 0.6s ease;
-    z-index: 3;
 }
 
-.show-modal {
-    transform: translateX(0%);
-    transition: all 0.4s ease;
+.active-modal {
+    transform: translateY(0);
+    transition: all 0.5s ease-in;
 }
-
-
-
 
 
 
@@ -295,12 +345,13 @@ main {
 
 
 #clases {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 60px;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 #clases .categories {
@@ -325,11 +376,25 @@ main {
     cursor: pointer;
 }
 
-#clases .category img {
-    border-radius: 15px;
-
+#fuego {
+    background-image: url(img/tipo\ fuego2.jpg);
+    background-size: cover;
 }
 
+#agua {
+    background-image: url(img/tipoagua.jpg);
+    background-size: cover;
+}
+
+#planta {
+    background-image: url(img/tipoplanta2.jpg);
+    background-size: cover;
+}
+
+#todos {
+    background-image: url(img/pokemones/todasLasClases.jpg);
+    background-size: cover;
+}
 
 #clases h2 {
     display: flex;
@@ -343,17 +408,12 @@ main {
 }
 
 
-#clases .type-icon {
-    width: 100%;
-    height: 100%;
-}
-
-
 
 
 
 
 #pokemones {
+    width: 100%;
     padding-top: 70px;
     padding-bottom: 20px;
     display: flex;
@@ -438,7 +498,7 @@ main {
     justify-content: center;
     margin-top: 60%;
     margin-bottom: 5%;
-    
+
 }
 
 #pokemones .products p {
@@ -457,6 +517,7 @@ main {
     color: white;
     cursor: pointer;
 }
+
 #pokemones button:hover {
     background: rgb(20, 234, 241);
     color: white;
@@ -483,15 +544,13 @@ main {
 
 
 
-/*
- 
+
 #contacto {
     padding-top: 70px;
     margin: auto;
     min-width: auto;
     max-width: 1200px;
-    width: 80%;
-
+    width: 100%;
 }
 
 #contacto h2 {
@@ -501,48 +560,45 @@ main {
     text-align: center;
 }
 
-.contacto form {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-form .conteinter-cajas {
-    position: relative;
+.formulario {
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-form .conteinter-cajas .cajas-contacto {
-    position: relative;
-    width: 49%;
-    margin: 5px 0;
+.info-contacto {
+    width: 50%;
+    background: #ee9ca7;
 }
 
-.contacto form .conteinter-cajas .cajas-contacto input,
-.contacto form .text-area textarea {
+.conteinter-cajas {
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
 
+.box-data {
+    background: #ee9ca7;
     width: 100%;
-    height: 100%;
-    padding: 15px;
-    font-size: 18px;
-    color: white;
-    border-radius: 15px;
-    background: linear-gradient(to top, #ee9ca7, #ffdde1);
-    border: #FF69B4 solid 3px;
-}
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
-.contacto form .conteinter-cajas .cajas-contacto input::placeholder,
-.contacto form .text-area textarea::placeholder {
-    color: white;
+
 }
 
 
-*/
+
 
 footer {
-    padding-top: 5px;
     width: 100%;
     height: 300px;
     display: flex;
@@ -552,8 +608,7 @@ footer {
     border-top: 3px solid white;
     background-image: url(/img/pokemones/pikachuFooter.png);
     min-width: auto;
-    background-position-y: bottom;
-
+    background-size: cover;
 }
 
 .footer-img-conteiner {
@@ -601,7 +656,21 @@ footer h3:hover {
 
 
 
-#menu-toggle ,
+#menu-toggle,
 .menu-label {
     display: none;
+}
+
+.inactive-btn {
+    background-color: gray;
+    color: black;
+    cursor: not-allowed;
+    border: none;
+}
+
+.inactive-btn:hover {
+    background-color: gray;
+    color: black;
+    cursor: not-allowed;
+    border: none;
 }

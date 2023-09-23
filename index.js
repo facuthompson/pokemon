@@ -11,7 +11,11 @@ const menuBtn = document.querySelector(".menu-label")
 
 const productsCart = document.querySelector(".cart-container")
 const total = document.querySelector(".total")
-const succesModal = document.querySelector(".active-modal")
+const succesModal = document.querySelector(".modal")
+
+const buyBtn = document.querySelector(".cart-btn-buy")
+const deleteBtn = document.querySelector(".cart-btn-delete")
+const CartBubble = document.querySelector(".cart-bubble")
 
 
 
@@ -127,7 +131,7 @@ const closeOnScroll = () => {
 
 const closeOnClick = (e) => {
     if (e.target.classList);
-}
+};
 
 //carritos render
 let cart =JSON.parse(localStorage.getItem("cart")) || [];
@@ -179,11 +183,11 @@ const addProduct = (e) => {
     const product = createProductData(e.target.dataset);
     if(isExistingCartProduct(product)) {
         addUnitToProduct(product);
-        showSuccesModal();
+        showSuccesModal("Pokemon Capturado")
     }
     else {
         createCartProduct(product);
-        showSuccesModal()
+        showSuccesModal("Pokemon Capturado")
     };
     updateCartState();
 };
@@ -202,11 +206,11 @@ const isExistingCartProduct = (product) => {
 const addUnitToProduct = (product) => {
     cart = cart.map((cartProduct) =>
     cartProduct.id === product.id
-        ? {...cartProduct, quantity: cartProduct.quantity + 1}
+        ? {...cartProduct, quantity: cartProduct.quantity + 1 }
         : cartProduct );
 };
 
-const showSuccesModal = (msg) => {
+const showSuccesModal =  ( msg ) => {
     succesModal.classList.add("active-modal");
     succesModal.textContent = msg;
     setTimeout(() => {
@@ -215,13 +219,31 @@ const showSuccesModal = (msg) => {
 };
 
 const createCartProduct = (product) => {
-    cart = [...cart, {...product, quantity: 1}];
+    cart = [...cart, {...product, quantity: 1 }];
 };
 
 const updateCartState = () => {
     saveCart();
     renderCart();
     showCartTotal();
+    disableBtn(buyBtn);
+    disableBtn(deleteBtn);
+    renderCartBubble();
+};
+
+const disableBtn = (btn) => {
+    if (!cart.length) {
+        btn.classList.add("inactive-btn")
+        btn.classList.add("inactive-hover")
+    } else {
+        btn.classList.remove("inactive-btn")
+        btn.classList.remove("inactive-hover")
+    }
+};
+
+const renderCartBubble = () => {
+    CartBubble.textContent = cart.reduce((acc, cur) => {
+        return acc + cur.quantity; }, 0);
 };
 
 
@@ -239,6 +261,13 @@ const init = () => {
     document.addEventListener("DOMContentLoaded", renderCart);
     document.addEventListener("DOMContentLoaded", showCartTotal);
     contenedor.addEventListener("click", addProduct);
-
+    disableBtn(buyBtn);
+    disableBtn(deleteBtn);
+    
 };
+
 init();
+
+
+
+localStorage.clear();

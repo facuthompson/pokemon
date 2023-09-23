@@ -27,9 +27,9 @@
             </div>
 
             <ul class="navbar-list">
-                <li ><a href="#hero">INICIO</a></li>
-                <li ><a href="#clases">CLASES</a></li>
-                <li ><a href="#pokemones">POKEMONES</a></li>
+                <li><a href="#hero">INICIO</a></li>
+                <li><a href="#clases">CLASES</a></li>
+                <li><a href="#pokemones">POKEMONES</a></li>
             </ul>
 
             <label for="cart-toggle" class="cart-label">
@@ -47,8 +47,8 @@
                     <span class="total">$0</span>
                 </div>
                 <div class="cart-btn">
-                    <button class="cart-btn-delete inactive-btn inactive-hover">Vaciar</button>
-                    <button class="cart-btn-buy inactive-btn inactive-hover">Comprar</button>
+                    <button class="cart-btn-delete">Vaciar</button>
+                    <button class="cart-btn-buy">Comprar</button>
                 </div>
             </div>
 
@@ -74,14 +74,14 @@
         <section id="clases">
             <h2 class="">Clases Destacadas</h2>
             <div class="categories">
-                <button class="category active">
-                    <img src="img/pokemones/todasLasClases.jpg" alt="" class="type-icon"></button>
-                <button class="category" data-category="Agua">
-                    <img src="img/tipoagua.jpg" alt="s" class="type-icon"></button>
-                <button class="category" data-category="Planta">
-                    <img src="img/tipoplanta2.jpg" alt="" class="type-icon"></button>
-                <button class="category" data-category="Fuego">
-                    <img src="img/tipo fuego2.jpg" alt="" class="type-icon"></button>
+                <button class="category active" id="todos">
+                </button>
+                <button class="category" id="agua" data-category="Agua">
+                </button>
+                <button class="category" id="planta" data-category="Planta">
+                </button>
+                <button class="category" id="fuego" data-category="Fuego">
+                </button>
             </div>
         </section>
 
@@ -97,7 +97,34 @@
         </section>
 
 
+        <section class="contacto" id="contacto">
+            <h2 class="contactanos"> Dejanos tu consulta!</h2> <br>
 
+            <div class="formulario">
+                <form action="#contacto">
+                    <div class="conteinter-cajas">
+                        <div class="box-data">
+                            <input type="text" id="Nombre" placeholder="Nombre" required><br><br>
+                        </div>
+                        <div class="box-data">
+                            <input type="email" id="Email" placeholder="Email" required><br><br>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="" id="" cols="20" rows="10" placeholder="tu mensaje"></textarea required>
+                        </div>
+                    </div>
+                    <div class="btn-form">
+                        <input type="submit" class="btn-form">
+                    </div>
+                </form>
+
+                <div class="info-contacto">
+
+                </div>
+            </div>
+
+
+        </section>
 
 
 
@@ -117,7 +144,7 @@
 
 
         <footer>
-            <div class="active-modal"></div>
+            <div class="modal"></div>
             <div class="footer-img-conteiner">
                 <img src="img/pokelogo2.png" alt="banner" class="footer-banner">
             </div>
@@ -129,8 +156,6 @@
             <h3>© Pokemarket</h3>
         </footer>
     </main>
-
-<img src="" alt="">
 </body>
 
 <script src="./data.js"></script>
